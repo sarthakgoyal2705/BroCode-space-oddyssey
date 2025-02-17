@@ -24,7 +24,10 @@ Welcome to the **Space Odyssey** website, an interactive journey through space, 
 ## How It Works
 
 **Start Journey:** The user clicks the "Start Journey" button to initiate the adventure. The intro scene fades out, and the planet scene is displayed.
+
 **Scene Transitions:** As the user progresses through the scenes, they can click buttons to move forward. Each scene fades out as the next one fades in, with smooth transitions using GSAP animations.
+
 **Escape Black Hole:** In the black hole scene, the user is given the option to escape. If successful, they are taken to the ending scene, where they are congratulated for completing the journey.
+
 **Restart:** The user can restart the journey from the beginning via the "Play Again" button in the ending scene.
 
