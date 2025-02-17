@@ -31,3 +31,17 @@ Welcome to the **Space Odyssey** website, an interactive journey through space, 
 
 **Restart:** The user can restart the journey from the beginning via the "Play Again" button in the ending scene.
 
+We have added audio on autoplay in the backround, if it doesn't work -
+
+Here's a step-by-step guide to allow autoplay in Google Chrome:
+
+## Enable Autoplay for a Specific Website in Chrome
+1. Open Chrome on your computer.
+2. In the address bar, type:
+chrome://settings/content/sound
+and press Enter.
+3. Scroll down to the "Custom behavior" section.
+4. Click "Add" next to "Allowed to play sound".
+5. In the pop-up box, enter the URL of the website https://space-oddyssey-seven.vercel.app/
+6. Click "Add".
+
