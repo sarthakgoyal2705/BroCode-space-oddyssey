@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Odyssey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="story-container">
+        <!-- Background Video -->
+        <video autoplay loop muted id="space-bg">
+            <source src="assets/space-journey.mp4" type="video/mp4">
+        </video>
+
+        <!-- Intro Scene -->
+        <div class="scene" id="intro">
+            <h1>Welcome to Space Odyssey</h1>
+            <p>You are an astronaut embarking on a thrilling journey beyond Earth.</p>
+            <button class="start-btn" onclick="startStory()">Start Journey</button>
+        </div>
+
+        <!-- Planet Scene -->
+        <div class="scene" id="planetScene">
+            <img src="assets/planet.jpg" alt="Planet X" class="planet">
+            <p>You have reached Planet X, a mysterious world with unknown lifeforms.</p>
+            <button class="next-btn" onclick="nextScene('alienScene')">Explore Further</button>
+        </div>
+
+        <!-- Alien Scene -->
+        <div class="scene" id="alienScene">
+            <img src="assets/alien-ship.jpg" alt="Alien Civilization" class="alien">
+            <p>You encountered an alien civilization. They seem friendly!</p>
+            <button class="next-btn" onclick="nextScene('blackholeScene')">Continue</button>
+        </div>
+
+        <!-- Blackhole Scene -->
+        <div class="scene" id="blackholeScene">
+            <img src="assets/blackhole.png" alt="Black Hole" class="blackhole">
+            <p>A black hole is pulling you in! What will you do?</p>
+            <button class="decision-btn" onclick="escapeBlackhole()">Try to Escape</button>
+        </div>
+
+        <!-- Ending Scene -->
+        <div class="scene" id="ending">
+            <h2>Congratulations!</h2>
+            <p>You successfully navigated through the dangers of space.</p>
+            <button class="restart-btn" onclick="restartStory()">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
