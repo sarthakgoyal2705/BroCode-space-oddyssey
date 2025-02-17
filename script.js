@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the intro scene by default
     document.getElementById("intro").style.display = "flex";
     gsap.to("#intro", { opacity: 1, duration: 1 });
+
+    // Set background audio volume if needed
+    const audio = document.getElementById("space-audio");
+    audio.volume = 0.5; // Adjust the volume (0.0 to 1.0)
 });
 
 function startStory() {
