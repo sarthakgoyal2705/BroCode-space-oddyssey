@@ -43,3 +43,8 @@ function restartStory() {
         gsap.to("#intro", { opacity: 1, duration: 1 });
     }});
 }
+
+function audiobg() {
+    const audio = document.getElementById("space-audio");
+    audio.volume = 0.5; // Adjust the volume (0.0 to 1.0)
+});
