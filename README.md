@@ -35,7 +35,7 @@ We have added audio on autoplay in the backround, if it doesn't work -
 
 Here's a step-by-step guide to allow autoplay in Google Chrome:
 
-## Enable Autoplay for a Specific Website in Chrome
+## Enable Autoplay for Website in Chrome
 1. Open Chrome on your computer.
 2. In the address bar, type:
 chrome://settings/content/sound
